@@ -1,0 +1,76 @@
+
+.logo{
+    display: flex;
+    font-size: 34px;
+    height: 90px;
+    align-items: center;
+    cursor: pointer;
+    color:#333;
+    text-decoration: none;
+}
+.logo-letters{
+    display: flex;
+    font-weight: bold;
+  }
+  .global-logo{
+    color: #FFB406;
+  }
+.symbol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.symbol div{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 25%;
+    width: 20%;
+}
+.cog1{
+    font-size: 45px;
+    transform: rotate(30deg);
+    position: relative;
+    left: 1px;
+    animation-name: smallCogRotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.cog2{
+    font-size: 55px;
+    transform: rotate(30deg);
+    position: relative;
+    right: 4px;
+    top: 5px;
+    animation-name: smallCogRotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.cog3{
+    font-size: 65px;
+    color: #FFB406;
+    animation-name: largeCogRotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes smallCogRotation{
+    0%{transform: rotate(30deg);}
+    50%{transform:rotate(210deg)}
+}
+@keyframes largeCogRotation{
+    0%{transform: rotate(0deg);}
+    50%{transform:rotate(-180deg)}
+}
+
+@media only screen and (max-width: 800px) {
+    .cog1{
+        font-size: 35px;
+    }
+    .cog2{
+        font-size: 40px;
+    }
+    .cog3{
+        font-size: 52px;;
+    }
+}

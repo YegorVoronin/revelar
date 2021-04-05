@@ -1,0 +1,29 @@
+footer{
+    background-color: #333;
+    height: 70px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.links-footer{
+    font-size: 30px;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-link{
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+.footer-link:hover{
+    color: #FFB406;
+}
+@media only screen and (max-width: 820px){
+    .quote-footer{
+        display: none;
+    }
+   .links-footer{
+       width: 35%;
+   }
+}

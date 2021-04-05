@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Gothic+A1:wght@200&display=swap');
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Gothic A1', sans-serif;
+}
+nav{
+  height: 108px; 
+  width: 100%;
+  background-color: #788695;
+  color: #333333;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 20;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+}
+nav ul{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 22px;
+}
+
+#nav-links:hover{
+  color: #FFB406;
+}
+#nav-links{
+  color: #333;
+  text-decoration: none;
+  transition-duration: 150ms;
+  cursor: pointer;
+}
+/* Links */
+.links, #links{
+  width: 135px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#link{
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+#link:hover{
+  color: #FFB406;
+}
+/* Slide Nav */
+.slide-nav{
+    height: 85vh;
+    position: fixed;
+    top: 108px;
+    background-color: #616E7D;
+    overflow: hidden;
+    display: none;
+    flex-direction: column; 
+    justify-content: space-around;
+    transition-duration: 250ms;
+}
+.slide-nav ul{
+  height: 80%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#slide-nav-links{
+  color: whitesmoke;
+  text-decoration: none;
+}
+#slide-nav-links:hover{
+  color: #FFB406;
+}
+/* Burger */
+.burger{
+  display: none;
+}
+.line1, .line2, .line3{
+  transition-duration: 250ms;
+  position: relative;
+}
+/* .line1{
+  transform: rotate(45deg);
+  top: 12px;
+}
+.line2{
+  opacity: 0;
+}
+.line3{
+  transform: rotate(135deg);
+  top: -12px;
+} */
+
+@media only screen and (max-width: 820px) {
+  .App{
+    padding-top: 108px;
+  }
+  /* Nav */
+  .navLinks{
+      display: none;
+  }
+  .burger{
+      height: 35px;
+      width: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      cursor: pointer;
+    }
+
+    .burger div{
+        background-color: #333;
+        height: 4px;
+        width: 100%;
+    }
+  /* Slide Nav */
+.slide-nav{
+  display: flex;
+}
+  nav{
+    position: fixed;
+    top: 0px;
+  }
+  /* LOGO */
+  .logo-letters{
+      font-size: 22px;
+  }
+  .links{
+    display: none;
+  }
+}

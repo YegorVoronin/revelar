@@ -1,0 +1,368 @@
+.home{
+    background-color: whitesmoke;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+    
+}
+/* BANNER */
+.home-banner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.laptop{
+   max-width: 100%;
+   height: 50vh;
+}
+.quote{
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+    position: relative;
+    top: -45px;
+}
+.right-side-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.home-logo{
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    padding-left: 10px;
+    height: 150px;
+    position: relative;
+    left: -15%;
+    top: -50px;
+}
+.global{
+   color: #FFB406;
+}
+#cogs{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+#cogs2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+}
+#cog1{
+    font-size: 63px;
+    transform: rotate(30deg);
+    position: relative;
+    left: 22px;
+    top: 5px;
+}
+#cog2{
+    font-size: 80px;
+    transform: rotate(30deg);
+    position: relative;
+    left: 16px;
+    top: 6px;
+
+}
+#cog3{
+    font-size: 95px;
+    color: #FFB406;
+}
+/* Banner2 */
+.home-banner2{
+    background-color: #616E7D;
+    color: whitesmoke;
+    height:44vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.home-banner2 div{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.title-home-banner2{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Consulting */
+.consulting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.consulting div{
+    width: 50%;
+    position: relative;
+    right: -20%;
+    text-align: center;
+}
+.consult-quote{
+    color: #FFB406;
+    font-size: 25px;
+    font-weight: 800;
+}
+.consult-title{
+    font-size: 45px;
+    padding: 45px;
+}
+.consultPar{
+    font-size: 20px;
+    padding-bottom: 35px;
+}
+
+.consulting img{
+    max-width: 100%;
+}
+/* Platform */
+.platform{
+    background-color: #FFB406;
+    color: whitesmoke;
+    width: 25%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-left: 8%;
+    position: absolute;
+    top: 100vh;
+    overflow: hidden;
+}
+.platform div{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.platform-thinking{
+    font-size: 33px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.platform-quote{
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.platform-paragraph{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+/* NEWSletter */
+.newsletter{
+    background-color: #616E7D;
+    color: whitesmoke;
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 30%;
+}
+.newsletterquote{
+    display: flex;
+    font-size: 35px;
+    font-weight: 700;
+}
+#rev{
+    color: #FFB406;
+}
+.newsletterquote div{
+    margin-left: 4px;
+}
+.newsletter form{
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.newsletter form div{
+    display: flex;
+}
+.newsletter form input{
+    margin-left: 2px;
+    margin-right: 10px;
+    width: 80%;
+    height: 20px;
+}
+.newsletter button{
+    height: 35px;
+    width: 90px;
+    background-color: #333333;
+    color: whitesmoke;
+    border: none;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+.newsletter button:hover{
+    background-color: #FFB406;
+}
+.newsletter button:focus{
+    background-color: whitesmoke;
+    color: black;
+    outline: none;
+}
+
+/* Articles */
+.articles{
+    background-color: #616E7D;
+    color: whitesmoke;
+    display: grid;
+    padding-top: 2%;
+    grid-template-columns: 33% 33% 33%;
+}
+.article{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+.article:hover{
+    opacity: .7;
+}
+.title{
+    font-size: 18px;
+    text-align: center;
+    color: #FFB406;
+}
+.art-body{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1500px) {
+    .platform{
+        width: 37%;
+    }
+    .newsletter{
+        height: 200px;
+        padding-left: 45%;
+    }
+    .newsletter form{
+        font-size: 12px;  
+    }
+}
+@media only screen and (max-height: 620px){
+    .home-logo{
+        display: none;
+    }
+    .quote{
+        position: relative;
+        top: 0px;
+        padding-left: 10px;
+     }
+}
+@media only screen and (max-width: 820px) {
+    /* Banner */
+    .laptop{
+        max-width: 100%;
+        height: 20vh;
+     }
+     
+     .quote{
+        color: #333;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 15px;
+        position: relative;
+        top: 0px;
+        padding-left: 10px;
+     }
+     .right-side-banner{
+        top: 0px;
+    }
+    .home-logo{
+        display: none;
+    }
+    /* Banner2 */
+    .home-banner2{
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        padding: 0px;
+    }
+    .home-banner2 div{
+        width: 100%;
+    }
+    .title-home-banner2{
+        font-size: 25px;
+    }
+    /* Consulting */
+    .consulting div{
+        width: 90%;
+        position: relative;
+        right: 0%;
+        padding: 5px;
+    }
+    .consult-quote{
+        color: #FFB406;
+        font-size: 20px;
+        font-weight: 800;
+    }
+    .consult-title{
+        font-size: 35px;
+        padding: 45px;
+    }
+    /* Platform */
+    .platform{
+        width: 100%;
+        margin-left: 0%;
+        position: relative;
+        top: 0px;
+    }
+    /* Articles */
+    .articles{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter{
+        width: 100%;
+        padding-left:0%;
+    }
+    .newsletter form{
+        flex-direction: column;
+    }
+    .newsletter form div{
+        flex-direction: column;
+    }
+    .newsletterquote{
+        font-size: 12px;
+    }
+    .newsletter form div div{
+        position: relative;
+        left: 10%;
+    }
+    .newsletter button{
+        position: relative;
+        background-color: blue;
+        left: 0%;
+        top: 5px;
+    }
+}
+
